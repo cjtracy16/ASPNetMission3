@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title> <!--Webpage title-->
+    <link rel="shortcut icon" type="image/svg" href="img/ComputerIcon.svg" /> <!--Added Icon-->
+
+    <link href="~/lib/bootstrap/css/styles.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" /> <!--Personalized StyleSheet-->
+</head>
+
+<body id="page-top">
+    <nav>
+        <a asp-controller="Conner" asp-action="Index">Home</a>
+        <a asp-controller="Conner" asp-action="Calculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>Conner Tracy | 2022</footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/js/scripts.js"></script>
+
+    <script src="~/js/calculator.js"></script>
+</body>
+</html>
